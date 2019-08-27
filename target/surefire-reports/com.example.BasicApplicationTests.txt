@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: com.example.BasicApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 9.568 s <<< FAILURE! - in com.example.BasicApplicationTests
+contextLoads(com.example.BasicApplicationTests)  Time elapsed: 0.003 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'companyController': Unsatisfied dependency expressed through field 'companydao'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'companyDao' defined in file [C:\Users\Andrei\Documents\NetBeansProjects\Final_Week\target\classes\com\example\dao\CompanyDao.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'final_Repository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class java.lang.Object
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'companyDao' defined in file [C:\Users\Andrei\Documents\NetBeansProjects\Final_Week\target\classes\com\example\dao\CompanyDao.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'final_Repository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class java.lang.Object
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'final_Repository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class java.lang.Object
+Caused by: java.lang.IllegalArgumentException: Not a managed type: class java.lang.Object
+
